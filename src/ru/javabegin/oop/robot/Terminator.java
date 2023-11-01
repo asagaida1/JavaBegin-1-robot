@@ -2,6 +2,13 @@ package ru.javabegin.oop.robot;
 
 public class Terminator extends ARobot{
 
+    public Terminator() {
+    }
+
+    public Terminator(String name) {
+        super(name);
+    }
+
     @Override
     public void move() {
         System.out.println("Terminator move");

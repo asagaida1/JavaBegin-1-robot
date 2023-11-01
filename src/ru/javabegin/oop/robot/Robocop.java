@@ -1,6 +1,12 @@
 package ru.javabegin.oop.robot;
 
 public class Robocop extends ARobot{
+    public Robocop() {
+    }
+
+    public Robocop(String name) {
+        super(name);
+    }
 
     @Override
     public void move() {
