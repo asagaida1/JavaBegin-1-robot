@@ -2,11 +2,13 @@ package ru.javabegin.oop.robot;
 
 public class Terminator extends ARobot{
 
+    Wing wing;
+
     public Terminator() {
     }
 
-    public Terminator(String name) {
-        super(name);
+    public Terminator(String name, IWing iWing) {
+        super(name, iWing);
     }
 
     @Override
@@ -21,7 +23,7 @@ public class Terminator extends ARobot{
 
     @Override
     public void flight() {
-        System.out.println("Terminator flight");
+        System.out.println("Terminator flight with wing size = " + getiWing().getSize());
     }
 
     @Override
@@ -30,9 +32,15 @@ public class Terminator extends ARobot{
     }
 
     @Override
+    public IWing getWing() {
+        return null;
+    }
+
+    @Override
     public String toString() {
         return "Terminator{" +
                 "name='" + super.getName() + '\'' +
+                "wing='" + super.getiWing() + '\'' +
                 '}';
     }
 }

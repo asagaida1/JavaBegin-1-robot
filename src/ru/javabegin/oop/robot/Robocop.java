@@ -1,11 +1,13 @@
 package ru.javabegin.oop.robot;
 
 public class Robocop extends ARobot{
+
+    Wing wing;
     public Robocop() {
     }
 
-    public Robocop(String name) {
-        super(name);
+    public Robocop(String name, IWing iWing) {
+        super(name, iWing);
     }
 
     @Override
@@ -21,7 +23,7 @@ public class Robocop extends ARobot{
 
     @Override
     public void flight() {
-        System.out.println("Robocop flight");
+        System.out.println("Robocop flight with wing size = " + getiWing().getSize());
     }
 
     @Override
@@ -30,9 +32,15 @@ public class Robocop extends ARobot{
     }
 
     @Override
+    public Wing getWing() {
+        return wing;
+    }
+
+    @Override
     public String toString() {
         return "Robocop{" +
                 "name='" + super.getName() + '\'' +
+                "wing='" + super.getiWing() + '\'' +
                 '}';
     }
 }

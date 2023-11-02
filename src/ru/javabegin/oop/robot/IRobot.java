@@ -4,8 +4,10 @@ public interface IRobot {
     void move();
     void stop();
     void flight();
+    void talk();
 
+    IWing getWing();
     String getName();
 
-    void talk();
+
 }

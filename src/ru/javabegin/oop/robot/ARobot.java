@@ -2,12 +2,14 @@ package ru.javabegin.oop.robot;
 
 public abstract class ARobot implements IRobot{
     private String name;
+    private IWing iWing;
 
     public ARobot() {
     }
 
-    public ARobot(String name) {
+    public ARobot(String name, IWing iWing) {
         this.name = name;
+        this.iWing = iWing;
     }
 
     @Override
@@ -17,6 +19,14 @@ public abstract class ARobot implements IRobot{
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public IWing getiWing() {
+        return iWing;
+    }
+
+    public void setiWing(IWing iWing) {
+        this.iWing = iWing;
     }
 
     @Override
