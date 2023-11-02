@@ -18,6 +18,7 @@ public class Main {
         robocop.stop();
         robocop.flight();
         robocop.talk();
+        robocop.off();
 
         terminator.move();
         terminator.stop();

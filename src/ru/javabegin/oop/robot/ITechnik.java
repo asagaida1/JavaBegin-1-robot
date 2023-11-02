@@ -1,7 +1,12 @@
 package ru.javabegin.oop.robot;
 
 public interface ITechnik {
-    void on();
+    default void on() {
+        System.out.println(this.getClass().getSimpleName() + " default on");
+    }
 
-    void off();
+    default void off() {
+        on();
+        System.out.println(this.getClass().getSimpleName() + " default off");
+    }
 }
