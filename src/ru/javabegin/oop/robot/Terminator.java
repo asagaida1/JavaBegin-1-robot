@@ -37,6 +37,16 @@ public class Terminator extends ARobot{
     }
 
     @Override
+    public void on() {
+        System.out.println(this.getClass().getSimpleName() + " on");
+    }
+
+    @Override
+    public void off() {
+        System.out.println("off");
+    }
+
+    @Override
     public String toString() {
         return "Terminator{" +
                 "name='" + super.getName() + '\'' +

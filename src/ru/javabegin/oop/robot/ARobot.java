@@ -1,6 +1,6 @@
 package ru.javabegin.oop.robot;
 
-public abstract class ARobot implements IRobot{
+public abstract class ARobot implements IRobot, ITechnik{
     private String name;
     private IWing iWing;
 

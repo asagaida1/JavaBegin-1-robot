@@ -37,6 +37,16 @@ public class Robocop extends ARobot{
     }
 
     @Override
+    public void on() {
+        System.out.println("on");
+    }
+
+    @Override
+    public void off() {
+        System.out.println("off");
+    }
+
+    @Override
     public String toString() {
         return "Robocop{" +
                 "name='" + super.getName() + '\'' +

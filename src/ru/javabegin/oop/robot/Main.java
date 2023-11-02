@@ -23,6 +23,7 @@ public class Main {
         terminator.stop();
         terminator.flight();
         terminator.talk();
+        terminator.on();
 
 
         System.out.println(robocop);
