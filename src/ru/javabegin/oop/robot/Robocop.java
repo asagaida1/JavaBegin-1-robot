@@ -36,15 +36,9 @@ public class Robocop extends ARobot{
         return aircraftWing;
     }
 
-//    @Override
-//    public void on() {
-//        System.out.println("on");
-//    }
-//
-//    @Override
-//    public void off() {
-//        System.out.println("off");
-//    }
+    void takeGun(){
+        System.out.println("RoboCop take gun");
+    }
 
     @Override
     public String toString() {

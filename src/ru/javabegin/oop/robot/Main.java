@@ -19,13 +19,13 @@ public class Main {
         robocop.flight();
         robocop.talk();
         robocop.off();
+        robocop.takeGun();
 
         terminator.move();
         terminator.stop();
         terminator.flight();
         terminator.talk();
         terminator.on();
-
 
         System.out.println(robocop);
         System.out.println(terminator);
