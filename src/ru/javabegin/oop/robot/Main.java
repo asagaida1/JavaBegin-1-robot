@@ -10,6 +10,13 @@ public class Main {
         Robocop robocop = new Robocop();
         Terminator terminator = new Terminator("term", new LittleWing(10));
 
+        IRobot roboCopInterface = new Robocop();
+        ((Robocop)roboCopInterface).takeGun(); // без присвоения переменной
+        Robocop robocopTrue = ((Robocop) roboCopInterface);
+        robocopTrue.takeGun();
+
+
+
         robocop.setName("robo");
         robocop.setiWing(aircraftWing);
 //        terminator.setName("term");
