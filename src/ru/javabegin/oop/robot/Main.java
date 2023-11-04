@@ -3,15 +3,15 @@ package ru.javabegin.oop.robot;
 public class Main {
     public static void main(String[] args) {
 
-        Wing wing = new Wing();
-        wing.setSize(20);
-        wing.open();
+        AircraftWing aircraftWing = new AircraftWing();
+        aircraftWing.setSize(20);
+        aircraftWing.open();
 
         Robocop robocop = new Robocop();
-        Terminator terminator = new Terminator("term",wing);
+        Terminator terminator = new Terminator("term", new LittleWing(10));
 
         robocop.setName("robo");
-        robocop.setiWing(wing);
+        robocop.setiWing(aircraftWing);
 //        terminator.setName("term");
 
         robocop.move();

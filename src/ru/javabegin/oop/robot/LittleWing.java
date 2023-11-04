@@ -1,11 +1,18 @@
 package ru.javabegin.oop.robot;
 
-public class Wing implements IWing{
+public class LittleWing implements IWing{
+    int size;
 
-    private int size;
+    public LittleWing() {
+    }
+
+    public LittleWing(int size) {
+        this.size = size;
+    }
+
     @Override
     public void open() {
-        System.out.println("wing open");
+        System.out.println("Little wing open");
     }
 
     @Override
@@ -19,7 +26,7 @@ public class Wing implements IWing{
 
     @Override
     public String toString() {
-        return "Wing{" +
+        return "LittleWing{" +
                 "size=" + size +
                 '}';
     }

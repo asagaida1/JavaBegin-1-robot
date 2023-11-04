@@ -2,7 +2,7 @@ package ru.javabegin.oop.robot;
 
 public class Terminator extends ARobot{
 
-    Wing wing;
+    AircraftWing aircraftWing;
 
     public Terminator() {
     }

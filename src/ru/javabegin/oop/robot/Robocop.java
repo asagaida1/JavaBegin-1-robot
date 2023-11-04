@@ -2,7 +2,7 @@ package ru.javabegin.oop.robot;
 
 public class Robocop extends ARobot{
 
-    Wing wing;
+    AircraftWing aircraftWing;
     public Robocop() {
     }
 
@@ -32,8 +32,8 @@ public class Robocop extends ARobot{
     }
 
     @Override
-    public Wing getWing() {
-        return wing;
+    public AircraftWing getWing() {
+        return aircraftWing;
     }
 
 //    @Override
