@@ -25,17 +25,18 @@ public class Printer implements IPrinter {
 
         while(paintVolume < text.length()){
             int left = text.length() - paintVolume;
-            System.out.println("Не хватило краски: " + left + "(всего краски в принтере: " + paintVolume +")");
+
+            System.out.printf("Не хватило краски: %d (всего краски в принтере: %d)%n", left, paintVolume);
             charge();
         }
-        System.out.println("На печать отправлен текст: " + text + " , длина: " + text.length());
+        System.out.printf("На печать отправлен текст: %s , длина: %d%n", text, text.length());
         paintVolume = paintVolume - text.length();
-        System.out.println("Текст распечатан: " + text + ", у принтера осталось краски: " + paintVolume);
+        System.out.printf("Текст распечатан: %s, у принтера осталось краски: %d\n", text,  paintVolume);
     }
 
     @Override
     public void charge() {
         paintVolume = paintVolume + symbolsCount;
-        System.out.println("Принтер пополнен на длину текста: " + symbolsCount + " (всего краски в принтере: " + paintVolume + ")");
+        System.out.printf("Принтер пополнен на длину текста: %d (всего краски в принтере: %d)\n", symbolsCount, paintVolume);
     }
 }
