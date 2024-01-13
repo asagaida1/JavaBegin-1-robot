@@ -40,6 +40,14 @@ public class Robocop extends ARobot{
         System.out.println("RoboCop take gun");
     }
 
+    void takeGun(int second){
+        System.out.println(String.format("RoboCop take gun in %d second", second));
+    }
+
+    void takeGun(int second, String speech){
+        System.out.println(String.format("RoboCop take gun in %d second and speech %s", second, speech));
+    }
+
     @Override
     public String toString() {
         return "Robocop{" +

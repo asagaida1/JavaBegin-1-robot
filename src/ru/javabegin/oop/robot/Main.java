@@ -27,6 +27,8 @@ public class Main {
         robocop.talk();
         robocop.off();
         robocop.takeGun();
+        robocop.takeGun(1);
+        robocop.takeGun(1, "\"-hi!\"");
 
         terminator.move();
         terminator.stop();
